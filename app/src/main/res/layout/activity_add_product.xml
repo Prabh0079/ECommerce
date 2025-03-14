@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edittextProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:padding="18dp"
+        />
+
+    <EditText
+        android:id="@+id/edittextProductDescrption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Description"
+        android:padding="18dp"/>
+
+    <EditText
+        android:id="@+id/edittextProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Price"
+        android:inputType="numberDecimal"
+        android:padding="18dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+       android:src="@drawable/basket_banner"
+        />
+
+
+
+    <Button
+        android:id="@+id/buttonadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Product" />
+
+</LinearLayout>

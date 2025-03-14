@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black2"
+    tools:context=".CartActivity">
+
+    <!-- RecyclerView for Cart Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="List of items in your cart"
+        android:importantForAccessibility="yes"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/totalPriceContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Total Price Container -->
+    <LinearLayout
+        android:id="@+id/totalPriceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/checkoutBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewCart">
+
+        <TextView
+            android:id="@+id/totalPriceTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: $0"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:contentDescription="Total cart price" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/yellow_bg"
+        android:padding="12dp"
+        android:contentDescription="Proceed to checkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalPriceContainer"
+        android:theme="@style/Widget.AppCompat.Button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

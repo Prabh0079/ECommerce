@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="intro_title">Let\'s Find<font color='#F3C024'> the Best &amp; Healthy</font> Grocery</string>
+    <string name="intro_login">Already have an account?<font color='#f3c024'> Signin</font></string>
+</resources>

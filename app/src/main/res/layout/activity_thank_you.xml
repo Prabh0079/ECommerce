@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black2"
+    android:padding="16dp">
+
+    <!-- Thank You Message -->
+    <TextView
+        android:id="@+id/thankYouMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You for Shopping!"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"/>
+
+    <!-- Order Again Button -->
+    <Button
+        android:id="@+id/btnOrderAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Again"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/yellow_bg"
+        app:layout_constraintTop_toBottomOf="@id/thankYouMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"/>
+
+    <!-- Order Summary Button -->
+    <Button
+        android:id="@+id/btnOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yellow_bg"
+        app:layout_constraintTop_toBottomOf="@id/btnOrderAgain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
